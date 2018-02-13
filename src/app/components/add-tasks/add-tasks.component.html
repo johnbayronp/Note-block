@@ -4,19 +4,21 @@
     <p class="flow-text">Agregar una nueva nota</p> <br>
   </span>
  
-  <form (ngSubmit)="onSubmit()">
+  <form (ngSubmit)="onSubmit()" class="col-s6">
     <div class="row">
           <div class="input-field col-s6">
               <input type="text" placeholder="Titulo de la nota" name="title" [(ngModel)]="task.title">
               <label>Titulo : </label>
           </div>
     
-    <div class="input-field col-s6">
-      <input type="text" placeholder="Descripcion de la nota" ng-model="task.description" name="description">
-      <label >Descripcion : </label>
+          <div class="input-field col-s6">
+              <input type="text" placeholder="Descripcion de la nota" [(ngModel)]="task.description" name="description">
+              <label >Descripcion : </label>
+          </div>
     </div>
-  </div>
+
     <input type="submit" class="btn light-red">
+  
   </form>
 
 </div>
