@@ -34,5 +34,9 @@ export class TaskService {
     return this.tasks; 
   }
 
+  addTasks(task: Task){ // hace el callback de task para agregar nuevas notas 
+    this.tasksCollection.add(task);
+  }
+
 }
 
